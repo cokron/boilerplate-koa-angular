@@ -1,7 +1,3 @@
-# Koa server boilerplate
-
-Koa server boilerplate with automated tasks
-
 
 ## Features
 * Automatic CoffeeScript, Jade and Stylus compilation
@@ -10,8 +6,4 @@ Koa server boilerplate with automated tasks
 * Automatic server restart
 * CoffeeScript with es6 generators support ```->*```
 
-## Instalation
-Just clone the repository
-
-## Usage
-Run ```gulp``` to satart server
+Run ```gulp``` to start server
