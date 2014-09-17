@@ -40,6 +40,12 @@ app.get('/', function*() {
   return this.body = yield render('index.jade');
 });
 
+app.get('/partials/:name', function*() {
+  var partial;
+  partial = "partials/" + this.params.name + ".jade";
+  return this.body = yield render(partial);
+});
+
 app.get('/api/:id', function*() {
   return this.body = {
     id: this.params.id,

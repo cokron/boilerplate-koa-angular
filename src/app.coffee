@@ -22,6 +22,10 @@ require('koa-qs')(app)
 app.get '/', ->*
   @body = yield render 'index.jade'
 
+app.get '/partials/:name', ->*
+  partial = "partials/#{@params.name}.jade"
+  @body = yield render(partial)
+
 app.get '/api/:id', ->*
   @body =
     id: @params.id

@@ -4,12 +4,14 @@ block head
   link(rel="stylesheet", href="stylesheets/style.css", type="text/css")
   link(rel="stylesheet", href="stylesheets/vendor.min.css", type="text/css")
 
+
 block body
-  include partials/navbar
-
-  #container
-    h1 webapp boilerplate 2
-
-  include partials/footer
+  div(ng-view)
+    include partials/navbar
+  
+    #container
+      h1 webapp boilerplate 2
+  
+    include partials/footer
   script(src="scripts/vendor.min.js")
   script(src="scripts/app.min.js")
