@@ -1,6 +1,5 @@
 'use strict'
-# Declare app level module which depends on filters, and services
-
+# declaring modules here, so that we can split the implementation into different files
 angular.module('app.filters', [])
 angular.module('app.directives', [])
 
