@@ -16,6 +16,9 @@ Just clone the repository
 
 ## Usage
 make sure that you are using node version >= 0.11.x
+
+```
 npm install
 bower install
+```
 Run ```gulp``` to start server
