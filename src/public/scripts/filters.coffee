@@ -1,7 +1,7 @@
 "use strict"
 
 # Filters 
-app = angular.module('app.filters', [])
+app = angular.module('app.filters')
 app.filter "format_time", ->
   (time) ->
     date = new Date(time)

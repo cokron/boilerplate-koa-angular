@@ -1,5 +1,5 @@
 "use strict"
-app = angular.module('app.directives', [])
+app = angular.module('app.directives'
 
 app.directive "eatClick", ->
   (scope, element, attrs) ->
