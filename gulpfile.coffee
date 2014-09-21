@@ -14,6 +14,7 @@ gulpFilter = require('gulp-filter')
 rename     = require("gulp-rename");
 minifycss  = require('gulp-minify-css')
 flatten    = require('gulp-flatten')
+ngAnnotate = require 'gulp-ng-annotate'
 
 mainBowerFiles = require('main-bower-files')
 
@@ -33,6 +34,7 @@ gulp.task 'server-scripts', ->
 gulp.task 'scripts', ->
   gulp.src paths.scripts
     .pipe coffee()
+    .pipe(ngAnnotate())
     .pipe uglify()
     .pipe concat 'app.min.js'
     .pipe gulp.dest paths.dest + '/scripts'

@@ -1,7 +1,7 @@
 "use strict"
 app = angular.module('app.directives')
 
-app.directive "sortable", ["$compile", ($compile) ->
+app.directive "sortable", ($compile) ->
     transclude: true
 
     restrict: "A"
@@ -29,5 +29,4 @@ app.directive "sortable", ["$compile", ($compile) ->
             $scope.orderByField = "created_at"  #null
         else # initial     
           $scope.orderByField = $scope.columnKey
-          $scope.reverseSort = false
-]  
+          $scope.reverseSort = false  
